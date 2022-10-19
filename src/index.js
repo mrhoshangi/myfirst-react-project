@@ -1,20 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './style.css'
 
-function timer() {
-  const elem = (
-    <div>
-      <h1>این یک تایمر است</h1>
-      <h2>
-        It is {new Date().toLocaleTimeString()}
-      </h2>
-    </div>
-  )
-  ReactDOM.render(elem , document.getElementById('root'))
-}
+import App from "./App"
 
-setInterval(() => {
-  timer()
-}, 1000);
+
+ReactDOM.render(<App/>,document.getElementById('root'));
+
 
 
